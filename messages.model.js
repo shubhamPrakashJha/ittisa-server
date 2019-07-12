@@ -9,4 +9,4 @@ const MessageSchema = new Schema({
         timestamps: true
     });
 
-module.exports = mongoose.model('Message', Message);
+module.exports = mongoose.model('Message', MessageSchema);
