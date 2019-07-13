@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const MessageSchema = new Schema({
     name: String,
     email: String,
-    query: String
+    query: String,
+    resolved: Boolean
 }, {
         timestamps: true
     });

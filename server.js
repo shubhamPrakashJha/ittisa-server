@@ -67,6 +67,7 @@ messageRoutes.route('/:id').put(function (req, res) {
             message.name = req.body.name;
             message.email = req.body.email;
             message.query = req.body.query;
+            message.resolved = req.body.resolved
         }
         message.save().then(message => {
             res.json('Message updated!');
