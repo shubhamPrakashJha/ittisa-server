@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 
 
 // connect mongoDB 
-mongoose.connect('mongodb://prk54:9825643821P@ds123929.mlab.com:23929/shubham-test/messages', {
+mongoose.connect('mongodb://shubham:shubham123@ds123929.mlab.com:23929/shubham-test', {
     useNewUrlParser: true
 }).then(() => {
     console.log("Successfully connected to the database");
