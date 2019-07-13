@@ -102,6 +102,6 @@ messageRoutes.route('/:id').delete(function (req, res) {
 // router will take control of request starting with path /messages:
 app.use('/messages', messageRoutes);
 //  Express server listening on port 4000
-app.listen(PORT, function () {
+app.listen(process.env.PORT || PORT, function () {
     console.log(`Server is listening on port ${PORT}`);
 });
